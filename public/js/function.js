@@ -47,7 +47,7 @@ $(document).ready(function(){
 		desplazarDown($("#portafolio"));
 	});
 
-	about.click(function(){
+	about.on("click",function(){
 		desplazarDown($("#about"));
 	});
 
@@ -75,14 +75,14 @@ function desplazarDown(ubicacion){
     event.preventDefault()
     $("html, body").animate({
         scrollTop: posicion
-    }, 2000);
+    }, 1000);
 };
 
 function desplazarUp(position){
     event.preventDefault()
     $("html, body").animate({
         scrollTop: position
-    }, 2000);
+    }, 1000);
 };
 
 function progress(ancla,porcentaje){

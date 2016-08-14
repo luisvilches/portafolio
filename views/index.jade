@@ -1,0 +1,134 @@
+extends ./layout.jade
+
+block content
+    .container-fluid.max-page
+      .row
+        .col-md-12
+          nav.navbar.navbar-default.navbar-fixed-top
+            .container-fluid
+              .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#mobile', aria-expanded='false')
+                  span.sr-only Toggle navigation
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+                a#logo.navbar-brand(href='')  < Luis Vilches /> 
+              #mobile.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li
+                    a#m1(href='') Portafolio
+                  li
+                    a#m2(href='') Perfil
+                  li
+                    a#m3(href='') Contacto
+      .row.paddingtop
+        .col-md-12
+          img.img-responsive.img-max.center-block(src='./img/develop.svg')
+          br
+          h1.text-center.title Luis Vilches 
+          h3.text-center Android Developer & Front-End Developer
+          h2#down.contenedor.glyphicon.glyphicon-chevron-down
+          hr
+      br
+      #portafolio.row.paddingtop2
+        hr
+        .col-md-12
+      br(id="#a")
+      each site in sites
+        .row.site
+          .col-md-offset-1.col-md-5
+            h3.text-center.title= site.nombre
+            br
+            a(target="_blank" href="#{site.url}")
+              img.img-responsive.center-block(src="#{site.urlImage}")
+            br
+          .col-md-5.col-md-offset-1
+            div.center-center
+              h5.text-center Tecnologias utilizadas:
+              h4.text-center.desingText= site.tecnologias
+              br
+              h5.text-center Tipo de Desarrollo:
+              h4.text-center.desingText= site.categoria
+        hr
+      br#about
+      .row
+        .col-md-12
+          .row
+            .col-md-offse-1.col-md-7.center2
+              h2.text-center.desingText Sobre Mi
+              br
+              p.text-center
+                | Mi nombre es Luis Vilches, 27 años, soy desarrollador Front-end & Android Developer ubicado en Santiago, Chile. Me encanta crear experiencias web que se vean y funcionen  bien, también disfruto codear interfaces web que lleven retos en la lógica y estructura del código.
+              br
+              p.text-center
+                | Siempre estoy en aprendizaje continuo sobre las últimas tendencias en tecnología web para ofrecer un trabajo acorde a los tiempos.
+            .col-md-3.col-md-offset-1
+              img.img-responsive.img-max-m.photo.center-block(src='./img/perfil.jpg')
+          .row
+            .col-md-12
+              br
+              hr
+              h3.text-center.paddingtop3.desingText Mis Conocimientos
+              br
+              .col-md-3
+                h3.text-center Html5
+                div(class="progress" style="margin:10px")
+                  div(id="html" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center Css3
+                div(class="progress" style="margin:10px")
+                  div(id="css" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center Bootstrap
+                div(class="progress" style="margin:10px")
+                  div(id="bootstrap" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center Jquery
+                div(class="progress" style="margin:10px")
+                  div(id="jquery" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center Javascript
+                div(class="progress" style="margin:10px")
+                  div(id="js" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center NodeJS
+                div(class="progress" style="margin:10px")
+                  div(id="node" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center MongoDB
+                div(class="progress" style="margin:10px")
+                  div(id="mongo" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+              .col-md-3
+                h3.text-center Android Studio
+                div(class="progress" style="margin:10px")
+                  div(id="android" class="progressbar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%")
+                    span(class="sr-only") 0% Complete
+
+      .row
+        .col-md-12.paddingbottom
+          div
+            hr
+            h2#contacto.text-center.paddingtop2 ¿TIENES UN PROYECTO EN MENTE?
+            br
+            h4.text-center CONTÁCTAME AHORA!
+            br
+            form.center-block.form-max(id="form" action="/sendmail" method="post")
+              input.form-control(id="name" type='', name='name', placeholder='Nombre' required)
+              br
+              input.form-control(id="tel" type='', name='tel', placeholder='Telefono' required)
+              br
+              input.form-control(id="mail" type='', name='mail', placeholder='Correo' required)
+              br
+              textarea.form-control(id="msg" name='msg', placeholder='Mensaje' required)
+              br
+              input.form-control.btn.btn-primary(id="send" type='submit', name='', value='Enviar')
+        hr
+    #result
+      

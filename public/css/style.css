@@ -1,0 +1,139 @@
+/* cambiar tipo de letra */
+nav.navbar ul.nav li {
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	color: #fff;
+}
+ 
+/* cambiar el color de fondo a la barra */
+nav.navbar {
+    background-color: #fff;
+    border: 0px;
+
+}
+.celeste{
+	background: #2a7fff;
+	padding: 5px;
+}
+.blanco-invierno{
+	background: #f3f3f3;
+	padding: 5px;
+}
+.gris{
+	background: #e9e9e9;
+	padding: 5px;
+}
+
+.img-max{
+
+	max-height: 300px;
+	max-width: 300px;
+}
+.img-max-m{
+
+	max-height: 250px;
+	max-width: 250px;
+}
+.img-max-thumbail{
+
+	max-height: 40px;
+	max-width: 40px;
+	padding: 0;
+}
+
+.paddingtop{
+	padding-top: 100px;
+}
+
+.desingText{
+	font-family: 'Noto Sans', sans-serif;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+  position: absolute;
+  top: 105%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contenedor2 {
+
+  top: 105%; 
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.contenedor3 {
+position: absolute;
+  top: 550%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-max{
+
+	max-height: 600px;
+	max-width: 600px;
+}
+.margin-center{
+	max-width: 50%;
+}
+.photo{
+	border-radius: 200%;
+	padding: 15px;
+	border: 4px dashed #ff6953;
+}
+.max-page{
+	max-width: 1380px; 
+}
+.center-div{ 
+	margin:0 auto 0 auto; width:390px; 
+}
+.hover:hover{
+	background: rgba(255,105,83,1.0);
+}
+.site{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.title{
+	font-family: 'Kaushan Script', cursive;
+}
+.textsite{
+	font-weight: bold;
+}
+.paddingbottom{
+	padding-bottom: 100px;
+}
+.paddingtop2{
+	padding-top: 60px;
+}
+.paddingtop3{
+	padding-top: 40px;
+}
+.center-center{
+	margin-top: 150px;
+}
+.center2{
+	margin-top: 0px;
+}
+.progress {  
+    color: #e74c3c;
+    border: 0;  
+    height: 18px;  
+    border-radius: 3px;  
+}
+
+.progressbar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255,105,83,1.0);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}

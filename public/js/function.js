@@ -59,14 +59,14 @@ $(document).ready(function(){
 		desplazarUp(0);
 	});
 
-	progress(html,70);
-	progress(css,60);
+	progress(html,90);
+	progress(css,80);
 	progress(bootstrap,50);
 	progress(jquery,50);
-	progress(js,50);
-	progress(node,40);
-	progress(mongo,30);
-	progress(android,40);
+	progress(js,60);
+	progress(node,60);
+	progress(mongo,50);
+	progress(android,70);
 
 });
 

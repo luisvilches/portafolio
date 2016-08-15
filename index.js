@@ -29,9 +29,9 @@ app.use('/',routes);
 
 /////// CONECCION BASE DE DATOS ///////////////
 
+//mongoose.connect('mongodb://localhost/test', function(err,res){
 
-//mongoose.connect('mongodb://portafolio:andres2230@ds153765.mlab.com:53765/portafolio', function(err,res){
-mongoose.connect('mongodb://localhost/test', function(err,res){
+mongoose.connect('mongodb://portafolio:andres2230@ds153765.mlab.com:53765/portafolio', function(err,res){
 	if (err) {console.log(err);
 	};
 });

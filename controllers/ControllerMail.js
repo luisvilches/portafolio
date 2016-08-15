@@ -23,10 +23,10 @@ module.exports= {
 			});
 
 			var mailOptions = {
-				from: "portafolios <lvilches21@gmail.com",
-				to: email ,
+				from: "portafolios <lvilches21@gmail.com" ,
+				to: "portafolios <lvilches21@gmail.com" ,
 				subject: nombre + " Te a enviado un mensaje desde tu portafolios | Telefono: " +telefono ,
-				html: "Telefono: "+telefono+"  |  "+"Mensaje: "+mensaje
+				html: "Telefono: "+telefono+"  |  Correo: " + email+"  |  Mensaje: "+mensaje
 			}
 
 			conta.sendMail(mailOptions, function(error,response){

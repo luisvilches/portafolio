@@ -13,6 +13,9 @@ router.get('/', controllers.home.index);
 
 /////// ADMINISTRACION ///////////////////////
 
+
+router.get('/admin', controllers.admin.pass);
+router.post('/admin/dashboard',controllers.verify.verify);
 router.get('/admin/addsite', controllers.adminController.addSiteView);
 router.post('/admin/addsite',middleware_upload, controllers.addsite.addSites);
 
